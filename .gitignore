@@ -1,0 +1,12 @@
+# Never commit secrets or private keys
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+*.tfstate
+*.tfstate.*
+.terraform/
+__pycache__/
+.venv/
+.DS_Store
