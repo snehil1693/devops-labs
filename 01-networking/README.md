@@ -18,4 +18,10 @@ Covers IP addressing and subnetting, the OSI model, TCP/UDP, DNS, NAT, firewalls
 | 3.4 | 🟡 | Nginx reverse proxy; reproduce 502 and 504 | `lab-3.4-reverse-proxy/` | ⬜ |
 | 3.5 | 🔴 | **TLS certificate expiry monitor** (warn/expired, exit codes, JSON, Slack) | `cert_monitor.py` | ⬜ |
 
-Lab instructions are in my lesson notes (Lessons 1–3).
+| 4.1 | 🟢 | Nginx round-robin across 3 backends | `lab-4-load-balancing/nginx.conf` | ⬜ |
+| 4.2 | 🟡 | LB algorithms (weight, ip_hash), passive health, backup servers, 502 on total failure | `lab-4-load-balancing/README.md` | ⬜ |
+| 4.3 | 🟡 | HAProxy active health checks + stats dashboard | `lab-4-load-balancing/haproxy.cfg` | ⬜ |
+| 4.4 | 🔴 | **My own load balancer in Python** (round robin / least connections, health checks, 502/503) | `lab-4-load-balancing/mini_lb.py` | ⬜ |
+| 4.5 | 🔴 | AWS ALB: path rules, target groups, weighted canary (optional, delete afterwards) | `lab-4-load-balancing/lab-4.5-aws-alb.md` | ⬜ |
+
+Lab instructions are in my lesson notes (Lessons 1–4).

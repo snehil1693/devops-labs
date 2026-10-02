@@ -5,7 +5,7 @@ Each folder is one topic. Labs go 🟢 Basic → 🟡 Intermediate → 🔴 Adva
 
 | # | Topic | Highlights | Status |
 |---|---|---|---|
-| 01 | [Networking](01-networking/) | Subnet calculator (Python), network health checker, TLS cert-expiry monitor, Nginx reverse proxy | 🚧 In progress |
+| 01 | [Networking](01-networking/) | Subnet calculator, network health checker, TLS cert-expiry monitor, Nginx/HAProxy load balancing, my own Python load balancer | 🚧 In progress |
 | 02 | Linux | | ⬜ |
 | 03 | AWS core (VPC, EC2, IAM, S3, RDS, ELB, Route53) | | ⬜ |
 | 04 | Docker | | ⬜ |
