@@ -6,7 +6,7 @@ Each folder is one topic. Labs go 🟢 Basic → 🟡 Intermediate → 🔴 Adva
 | # | Topic | Highlights | Status |
 |---|---|---|---|
 | 01 | [Networking](01-networking/) | Subnet calculator, network health checker, TLS cert-expiry monitor, Nginx/HAProxy load balancing, my own Python load balancer | 🚧 In progress |
-| 02 | [Linux](02-linux/) | Hardened systemd service + timer, Linux security & health audit script | 🚧 In progress |
+| 02 | [Linux](02-linux/) | Hardened systemd service + timer, Linux security & health audit script, LVM, SSH bastion/tunnels, incident triage script | 🚧 In progress |
 | 03 | AWS core (VPC, EC2, IAM, S3, RDS, ELB, Route53) | | ⬜ |
 | 04 | Docker | | ⬜ |
 | 05 | Kubernetes | | ⬜ |
