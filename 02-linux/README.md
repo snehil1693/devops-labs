@@ -18,3 +18,15 @@ Lab environment: a local Ubuntu 24.04 VM via Multipass (`multipass launch 24.04 
 | 6.4 | 🟡 | Log app with SIGHUP reopen, logrotate (create vs copytruncate), persistent journald, safe cron with `flock` | `lab-6.4-logs-cron/` | ⬜ |
 | 6.5 | 🔴 | **SSH like a pro**: bastion + ProxyJump, local tunnel, sshd hardening drop-in, fail2ban | `lab-6.5-ssh/` | ⬜ |
 | 6.6 | 🔴 | **`triage.sh`**: "first 60 seconds" incident triage tool (USE method, Ubuntu + Amazon Linux, `--json`) | `triage.sh` | ⬜ |
+
+### Bash scripting (Lesson 7) · files in [`bash/`](bash/)
+Every script passes ShellCheck and has bats tests run by GitHub Actions.
+
+| Lab | Level | What I built / learned | File(s) | Done |
+|---|---|---|---|---|
+| 7.1 | 🟢 | Expansion order, quoting, word splitting/globbing, `"$@"` vs `"$*"`, parameter expansion, exit codes + PIPESTATUS | `bash/lab-7.1-basics.md` | ⬜ |
+| 7.2 | 🟢→🟡 | Access-log analysis with grep/awk/sed/sort/uniq (top IPs, 5xx per minute, masking IPs), pipe vs single-awk timing | `bash/lab-7.2-logs/` | ⬜ |
+| 7.3 | 🟡 | Production script template, the `set -e` gaps, pipe-subshell and ssh-stdin bugs, ERR trap + PS4 tracing | `bash/lab-7.3-safe-scripts/` | ⬜ |
+| 7.4 | 🟡 | **`backup.sh`**: tar + sha256, retention, flock, atomic mv, dry-run, optional S3 upload, cron | `bash/lab-7.4-backup/` | ⬜ |
+| 7.5 | 🔴 | **`healthcheck.sh`**: parallel URL monitor with retries/backoff, SLOW/FAIL, `--json` via jq, Slack alert, systemd timer | `bash/lab-7.5-healthcheck/` | ⬜ |
+| 7.6 | 🔴 | **CI for shell**: bats tests + ShellCheck in GitHub Actions + pre-commit hook | `bash/lab-7.6-ci/`, `.github/workflows/bash-ci.yml` | ⬜ |
