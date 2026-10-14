@@ -30,3 +30,15 @@ Every script passes ShellCheck and has bats tests run by GitHub Actions.
 | 7.4 | 🟡 | **`backup.sh`**: tar + sha256, retention, flock, atomic mv, dry-run, optional S3 upload, cron | `bash/lab-7.4-backup/` | ⬜ |
 | 7.5 | 🔴 | **`healthcheck.sh`**: parallel URL monitor with retries/backoff, SLOW/FAIL, `--json` via jq, Slack alert, systemd timer | `bash/lab-7.5-healthcheck/` | ⬜ |
 | 7.6 | 🔴 | **CI for shell**: bats tests + ShellCheck in GitHub Actions + pre-commit hook | `bash/lab-7.6-ci/`, `.github/workflows/bash-ci.yml` | ⬜ |
+
+### Git in depth (Lesson 8) · files in [`git/`](git/)
+Throwaway experiment repos live outside this repo; the write-ups, scripts and hooks live here.
+
+| Lab | Level | What I built / learned | File(s) | Done |
+|---|---|---|---|---|
+| 8.1 | 🟢 | Git internals: blobs/trees/commits by hand with `cat-file`, branches as 41-byte files, detached HEAD + reflog rescue | `git/lab-8.1-internals.md` | ⬜ |
+| 8.2 | 🟢 | Config + `includeIf` (two identities), `add -p`, reset soft/mixed/hard table, revert, stash, untracking `.env` | `git/lab-8.2-daily-undo.md` | ⬜ |
+| 8.3 | 🟡 | Scenario script; ff vs `--no-ff` vs squash vs rebase graphs; zdiff3, ours/theirs swap, rerere, autosquash, `--force-with-lease` | `git/lab-8.3-merge-rebase/` | ⬜ |
+| 8.4 | 🟡 | **Protected `main`** (ruleset, CODEOWNERS, required CI, squash-only, signed commits), PR flow, **`release.sh`** (SemVer from Conventional Commits) + tag-triggered GitHub Release | `git/lab-8.4-github-flow/` | ⬜ |
+| 8.5 | 🔴 | **Hooks**: commit-msg, prepare-commit-msg, pre-commit (ShellCheck, size, secrets), pre-push; pre-commit framework; `--no-verify` vs CI gitleaks | `git/lab-8.5-hooks/`, `.githooks/` | ⬜ |
+| 8.6 | 🔴 | **Incident drills**: purge a leaked key (filter-repo), recover from a force push, `bisect run`, revert-the-revert, hotfix cherry-pick to a release branch | `git/lab-8.6-incident-drills/` | ⬜ |
